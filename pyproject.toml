@@ -1,0 +1,47 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+# Distribution name on PyPI (plain `rlprop` is taken by an unrelated project).
+# The import package is still `rlprop` — see [tool.hatch.build...packages] below.
+name = "rlprop-rs"
+version = "0.1.0"
+description = "Results-level proportionality for multi-objective recommendation (mandate-allocation / fuzzy-D'Hondt selection)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Patrik Dokoupil" },
+]
+keywords = [
+    "recommender-systems",
+    "multi-objective",
+    "diversity",
+    "novelty",
+    "fairness",
+    "reranking",
+    "mandate-allocation",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["numpy>=1.21"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/pdokoupil/RLProp"
+Repository = "https://github.com/pdokoupil/RLProp"
+Paper = "https://doi.org/10.1145/3477495.3531787"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rlprop"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

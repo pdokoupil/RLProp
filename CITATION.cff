@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: rlprop-rs
+abstract: >-
+  Results-level proportionality for multi-objective recommendation: select k items
+  so that objectives appear in user-specified ratios, via mandate-allocation /
+  fuzzy-D'Hondt selection.
+# Authors of *this software* (the implementation). The algorithm's authors are in
+# `preferred-citation` below — please cite the paper, not the code.
+authors:
+  - family-names: Dokoupil
+    given-names: Patrik
+repository-code: "https://github.com/pdokoupil/RLProp"
+license: MIT
+type: software
+preferred-citation:
+  type: conference-paper
+  title: "Towards Results-level Proportionality for Multi-objective Recommender Systems"
+  authors:
+    - family-names: Peska
+      given-names: Ladislav
+    - family-names: Dokoupil
+      given-names: Patrik
+  year: 2022
+  month: 7
+  doi: "10.1145/3477495.3531787"
+  collection-title: "Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval"
+  collection-type: proceedings
+  publisher:
+    name: "Association for Computing Machinery"
+  start: 1963
+  end: 1968
+  conference:
+    name: "SIGIR '22"
+    city: "Madrid"
+    country: "ES"
